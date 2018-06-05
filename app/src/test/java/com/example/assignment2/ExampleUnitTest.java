@@ -28,8 +28,7 @@ public class ExampleUnitTest {
     @Test
     public void is_Special() {
         String s = "H$ll0!!!";
-
-        //assertEquals(v.validate(s),1);
+        assertEquals(v.validate(s),1);
     }
 
     //Password contains a number
