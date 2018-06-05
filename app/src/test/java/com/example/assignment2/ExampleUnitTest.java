@@ -25,26 +25,29 @@ public class ExampleUnitTest {
     }
 
     //Password contains a special character
+    //this also passes the test that it is not the string "password"
     @Test
     public void is_Special() {
-        String s = "H$ll0!!!";
-        assertEquals(v.validate(s),1);
+        String s = "h$";
+        assertEquals(v.validate(s),2);
     }
 
     //Password contains a number
+    //this also passes the test that it is not the string "password"
     @Test
     public void is_a_number() {
-        String s = "B3lltone";
+        String s = "B3";
 
-        //assertEquals(v.validate(s),1);
+        assertEquals(v.validate(s),2);
     }
 
     //Password contains a uppercase and a lower case
+    //this also passes the test that it is not the string "password"
     @Test
     public void is_UPPER_and_lower() {
-        String s = "HaHaHaHaHaHaHa";
+        String s = "Ha";
 
-        //assertEquals(v.validate(s),1);
+        assertEquals(v.validate(s),2);
     }
 
     //Password is at least 8 characters long
@@ -56,6 +59,6 @@ public class ExampleUnitTest {
     //Password passes all tests
     @Test
     public void all_tests(){
-        assertEquals(v.validate("arithmetic"),2);
+        assertEquals(v.validate("S0b3y$F00d"),5);
     }
 }
