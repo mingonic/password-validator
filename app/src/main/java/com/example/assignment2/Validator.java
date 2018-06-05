@@ -6,7 +6,7 @@ public class Validator {
         int x = 0;
         if(password.length() >= 8 ) {
             x++;
-        }if(!(password.equalsIgnoreCase("password"))) {
+        }if(!(password.equals("password"))) {
             x++;
         }
         return x;
