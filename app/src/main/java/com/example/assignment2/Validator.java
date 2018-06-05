@@ -39,7 +39,7 @@ public class Validator {
         }
 
         //password not equal to "password"
-        if(!(password.equalsIgnoreCase("password"))) {
+        if(!(password.equals("password"))) {
             x++;
         }
 
