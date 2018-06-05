@@ -11,7 +11,7 @@ public class Validator {
         int x = 0;
 
         //password contains a special character
-        Pattern p1 = Pattern.compile("[!@#$%&*()_+=|<>?{}\\\\[\\\\]~-]");
+        Pattern p1 = Pattern.compile("[!@#$%&*()_+=|<>?{}~]");
         Matcher m1 = p1.matcher(password);
         boolean b1 = m1.find();
         if(b1){
