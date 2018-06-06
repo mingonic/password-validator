@@ -33,7 +33,7 @@ public class PasswordTests {
         onView(withId(R.id.button));
 
         //Should return a 0 thus no password entered
-        //onView(withId(R.id.Display)).check(matches(withText("Not Strong")));
+        onView(withId(R.id.Display)).check(matches(withText("Not Strong")));
     }
 
 //    @Test

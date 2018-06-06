@@ -12,9 +12,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         Validator v = new Validator();
 
         TextView textView = (TextView) findViewById(R.id.Display);
+        textView.setText("Not Strong");
 
         EditText editText = (EditText) findViewById(R.id.editText);
 
@@ -25,16 +27,16 @@ public class MainActivity extends AppCompatActivity {
         if (i == 1){
             textView.setText("Weak");
         }
-        if (i == 2){
+        else if (i == 2){
             textView.setText("Fair");
         }
-        if (i == 3){
+        else if (i == 3){
             textView.setText("Good");
         }
-        if (i == 4){
+        else if (i == 4){
             textView.setText("Strong");
         }
-        if (i <= 5){
+        else if (i >= 5){
             textView.setText("Excellent");
         }
         else {
