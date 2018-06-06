@@ -36,44 +36,44 @@ public class PasswordTests {
         onView(withId(R.id.Display)).check(matches(withText("Not Strong")));
     }
 
-//    @Test
-//    public void Testing_Weak_Password() {
-//        //Should return a 1 thus weak password
-//        onView(withId(R.id.editText)).perform(typeText("password"));
-//        onView(withId(R.id.button)).perform(click());
-//        onView(withId(R.id.Display)).check(matches(withText("Weak")));
-//    }
-//
-//    @Test
-//    public void Testing_Fair_Password() {
-//        //Should return a 2 thus fair strength password
-//        onView(withId(R.id.editText)).perform(typeText("h$"));
-//        onView(withId(R.id.button)).perform(click());
-//        onView(withId(R.id.Display)).check(matches(withText("Fair")));
-//    }
-//
-//    @Test
-//    public void Testing_Good_Password() {
-//        //Should return a 3 thus good strength password
-//        onView(withId(R.id.editText)).perform(typeText("h$"));
-//        onView(withId(R.id.button)).perform(click());
-//        onView(withId(R.id.Display)).check(matches(withText("Good")));
-//    }
-//
-//    @Test
-//    public void Testing_Strong_Password() {
-//        //Should return a 4 thus strong strength password
-//        onView(withId(R.id.editText)).perform(typeText("h$1"));
-//        onView(withId(R.id.button)).perform(click());
-//        onView(withId(R.id.Display)).check(matches(withText("Strong")));
-//    }
-//
-//    @Test
-//    public void Testing_Excellent_Password() {
-//        //Should return a 5 thus an excellent strength password (passes all rules)
-//        onView(withId(R.id.editText)).perform(typeText("He1!o"));
-//        onView(withId(R.id.button)).perform(click());
-//        onView(withId(R.id.Display)).check(matches(withText("Excellent")));
-//
-//    }
+    @Test
+    public void Testing_Weak_Password() {
+        //Should return a 1 thus weak password
+        onView(withId(R.id.editText)).perform(typeText("password"));
+        onView(withId(R.id.button)).perform(click());
+        onView(withId(R.id.Display)).check(matches(withText("Weak")));
+    }
+
+    @Test
+    public void Testing_Fair_Password() {
+        //Should return a 2 thus fair strength password
+        onView(withId(R.id.editText)).perform(typeText("h$"));
+        onView(withId(R.id.button)).perform(click());
+        onView(withId(R.id.Display)).check(matches(withText("Fair")));
+    }
+
+    @Test
+    public void Testing_Good_Password() {
+        //Should return a 3 thus good strength password
+        onView(withId(R.id.editText)).perform(typeText("h$"));
+        onView(withId(R.id.button)).perform(click());
+        onView(withId(R.id.Display)).check(matches(withText("Good")));
+    }
+
+    @Test
+    public void Testing_Strong_Password() {
+        //Should return a 4 thus strong strength password
+        onView(withId(R.id.editText)).perform(typeText("h$1"));
+        onView(withId(R.id.button)).perform(click());
+        onView(withId(R.id.Display)).check(matches(withText("Strong")));
+    }
+
+    @Test
+    public void Testing_Excellent_Password() {
+        //Should return a 5 thus an excellent strength password (passes all rules)
+        onView(withId(R.id.editText)).perform(typeText("He1!o"));
+        onView(withId(R.id.button)).perform(click());
+        onView(withId(R.id.Display)).check(matches(withText("Excellent")));
+
+    }
 }

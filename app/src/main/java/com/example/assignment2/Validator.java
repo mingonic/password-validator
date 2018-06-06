@@ -43,6 +43,10 @@ public class Validator {
             x++;
         }
 
+        if((password.equals(""))){
+            x = 0;
+        }
+
 
         return x;
     }

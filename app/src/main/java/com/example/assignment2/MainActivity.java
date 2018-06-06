@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
         int i = v.validate(value);
 
+        System.out.println(value);
+
         if (i == 1){
             textView.setText("Weak");
         }
