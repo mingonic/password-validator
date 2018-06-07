@@ -16,6 +16,7 @@
         android:layout_marginRight="148dp"
         android:layout_marginStart="148dp"
         android:text="Validate"
+        android:onClick="Password_Validator"
         app:layout_constraintBottom_toTopOf="@+id/Display"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

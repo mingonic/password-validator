@@ -2,6 +2,7 @@ package com.example.assignment2;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -11,6 +12,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+    }
+    public void Password_Validator(View u) {
+
 
 
         Validator v = new Validator();
@@ -26,24 +31,18 @@ public class MainActivity extends AppCompatActivity {
 
         System.out.println(value);
 
-        if (i == 1){
+        if (i == 1) {
             textView.setText("Weak");
-        }
-        else if (i == 2){
+        } else if (i == 2) {
             textView.setText("Fair");
-        }
-        else if (i == 3){
+        } else if (i == 3) {
             textView.setText("Good");
-        }
-        else if (i == 4){
+        } else if (i == 4) {
             textView.setText("Strong");
-        }
-        else if (i >= 5){
+        } else if (i >= 5) {
             textView.setText("Excellent");
-        }
-        else {
+        } else {
             textView.setText("Not Strong");
         }
-
     }
 }
